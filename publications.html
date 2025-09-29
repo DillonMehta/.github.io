@@ -1,0 +1,119 @@
+<!-- publications.html -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Publications — Dillon Mehta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html">DM</a>
+  <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"></button>
+  <nav class="nav">
+    <a href="projects.html">Work</a>
+    <a class="active" href="publications.html">Publications</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a class="btn btn-small" href="assets/Dillon_Mehta_Resume.pdf">Resume</a>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero">
+    <h1>Publications</h1>
+    <p>peer reviewed work, workshops, and preprints</p>
+    <div class="filters">
+      <input id="pub-search" type="search" placeholder="Search publications">
+      <div class="filter-chips">
+        <button data-year="all" class="chip active">All years</button>
+        <button data-year="2025" class="chip">2025</button>
+        <button data-year="2024" class="chip">2024</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section pub-list" id="pub-list">
+    <article class="pub" id="sea2025" data-year="2025">
+      <h3>Examining the Vulnerability of Multi Agent Medical Systems to Human Interventions for Clinical Reasoning</h3>
+      <p class="pub-meta">Mehta D, Liu B, et al. 2025</p>
+      <p class="pub-abstract">study of targeted prompts that shift diagnostic reasoning in coordinated agent pipelines</p>
+      <div class="pub-links">
+        <a class="chip" href="#" target="_blank" rel="noopener">PDF</a>
+        <a class="chip" href="#" target="_blank" rel="noopener">Workshop</a>
+        <a class="chip" href="#" target="_blank" rel="noopener">Code</a>
+        <button class="chip" data-bib="sea2025">BibTeX</button>
+      </div>
+      <pre class="bibtex" id="bib-sea2025">@inproceedings{mehta2025interventions,
+  title={Examining the Vulnerability of Multi Agent Medical Systems to Human Interventions for Clinical Reasoning},
+  author={Mehta, Dillon and Liu, Benjamin and others},
+  year={2025},
+  booktitle={SEA Workshop}
+}</pre>
+    </article>
+
+    <article class="pub" id="iedmc2025" data-year="2025">
+      <h3>Explainable Tuning for Non Technical Users</h3>
+      <p class="pub-meta">Mehta D. 2025</p>
+      <p class="pub-abstract">interface patterns that map model adjustments to visible behavior</p>
+      <div class="pub-links">
+        <a class="chip" href="#" target="_blank" rel="noopener">PDF</a>
+        <a class="chip" href="#" target="_blank" rel="noopener">Slides</a>
+        <button class="chip" data-bib="iedmc2025">BibTeX</button>
+      </div>
+      <pre class="bibtex" id="bib-iedmc2025">@inproceedings{mehta2025xtune,
+  title={Explainable Tuning for Non Technical Users},
+  author={Mehta, Dillon},
+  year={2025},
+  booktitle={IEDMC}
+}</pre>
+    </article>
+
+    <article class="pub" id="preprint2024" data-year="2024">
+      <h3>Assistive Robotics for Daily Independence</h3>
+      <p class="pub-meta">Mehta D. 2024</p>
+      <p class="pub-abstract">prototype study on control strategies for household assist tools</p>
+      <div class="pub-links">
+        <a class="chip" href="#" target="_blank" rel="noopener">ArXiv</a>
+        <button class="chip" data-bib="preprint2024">BibTeX</button>
+      </div>
+      <pre class="bibtex" id="bib-preprint2024">@article{mehta2024assistive,
+  title={Assistive Robotics for Daily Independence},
+  author={Mehta, Dillon},
+  year={2024},
+  journal={arXiv preprint}
+}</pre>
+    </article>
+  </section>
+
+  <section class="section" id="press">
+    <div class="section-head">
+      <h2>Press</h2>
+    </div>
+    <div class="grid cards">
+      <a class="card" href="#" target="_blank" rel="noopener">
+        <div class="card-body">
+          <h3>Houston Tech Student Builds Community Through Robotics</h3>
+          <p>feature on outreach and competition results</p>
+        </div>
+      </a>
+      <a class="card" href="#" target="_blank" rel="noopener">
+        <div class="card-body">
+          <h3>Designing Explainable ML for Real Users</h3>
+          <p>interview on product lessons from internships</p>
+        </div>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> Dillon Mehta</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
