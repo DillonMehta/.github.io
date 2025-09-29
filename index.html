@@ -1,0 +1,147 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dillon Mehta — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="favicon.ico">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html">DM</a>
+  <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"></button>
+  <nav class="nav">
+    <a href="projects.html">Work</a>
+    <a href="publications.html">Publications</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a class="btn btn-small" href="assets/Dillon_Mehta_Resume.pdf">Resume</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-inner">
+      <h1 class="hero-title">Dillon Mehta</h1>
+      <p class="hero-subtitle">engineering x research x impact</p>
+      <div class="hero-cta">
+        <a class="btn" href="projects.html">View Work</a>
+        <a class="btn btn-outline" href="publications.html">See Publications</a>
+      </div>
+      <ul class="hero-meta">
+        <li><a href="mailto:dillonamehta@gmail.com">dillonamehta@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <h2>Featured Work</h2>
+      <a class="link" href="projects.html">All projects</a>
+    </div>
+    <div class="grid cards">
+      <a class="card" href="projects.html#agentclinic">
+        <div class="card-media" style="background-image:url('assets/agentclinic.jpg')"></div>
+        <div class="card-body">
+          <h3>AgentClinic</h3>
+          <p>multi agent clinical reasoning framework with intervention tests</p>
+          <div class="tags"><span class="tag">python</span><span class="tag">llm</span><span class="tag">research</span></div>
+        </div>
+      </a>
+      <a class="card" href="projects.html#vex">
+        <div class="card-media" style="background-image:url('assets/robot.jpg')"></div>
+        <div class="card-body">
+          <h3>VEX 19697Z</h3>
+          <p>state champion robot design with controls and telemetry</p>
+          <div class="tags"><span class="tag">c++</span><span class="tag">controls</span><span class="tag">cad</span></div>
+        </div>
+      </a>
+      <a class="card" href="projects.html#etn">
+        <div class="card-media" style="background-image:url('assets/etn.jpg')"></div>
+        <div class="card-body">
+          <h3>Investor Matching</h3>
+          <p>ml tool that pairs climate startups with aligned investors</p>
+          <div class="tags"><span class="tag">ml</span><span class="tag">product</span><span class="tag">data</span></div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <h2>Selected Publications</h2>
+      <a class="link" href="publications.html">All publications</a>
+    </div>
+    <div class="pub-list compact">
+      <article class="pub">
+        <h3><a href="publications.html#sea2025">Examining the Vulnerability of Multi Agent Medical Systems to Human Interventions for Clinical Reasoning</a></h3>
+        <p class="pub-meta">Mehta D, Liu B, et al. 2025</p>
+        <div class="pub-links">
+          <a class="chip" href="#" target="_blank" rel="noopener">PDF</a>
+          <a class="chip" href="#" target="_blank" rel="noopener">Workshop</a>
+          <a class="chip" href="#" target="_blank" rel="noopener">BibTeX</a>
+          <a class="chip" href="#" target="_blank" rel="noopener">Code</a>
+        </div>
+      </article>
+      <article class="pub">
+        <h3><a href="publications.html#iedmc2025">Explainable Tuning for Non Technical Users</a></h3>
+        <p class="pub-meta">Mehta D, 2025</p>
+        <div class="pub-links">
+          <a class="chip" href="#" target="_blank" rel="noopener">PDF</a>
+          <a class="chip" href="#" target="_blank" rel="noopener">Slides</a>
+          <a class="chip" href="#" target="_blank" rel="noopener">BibTeX</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <h2>Quick Links</h2>
+    </div>
+    <div class="grid quick">
+      <a class="quick-link" href="about.html">
+        <span>About</span>
+        <strong>Background and skills</strong>
+      </a>
+      <a class="quick-link" href="contact.html">
+        <span>Contact</span>
+        <strong>Get in touch</strong>
+      </a>
+      <a class="quick-link" href="projects.html#talks">
+        <span>Talks</span>
+        <strong>Invited talks and panels</strong>
+      </a>
+      <a class="quick-link" href="publications.html#press">
+        <span>Press</span>
+        <strong>Media and features</strong>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> Dillon Mehta</p>
+  <div class="social">
+    <a href="https://github.com/" aria-label="GitHub">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.1-.75.09-.74.09-.74 1.22.09 1.86 1.25 1.86 1.25 1.08 1.85 2.84 1.32 3.53 1.01.11-.78.42-1.32.76-1.62-2.66-.3-5.47-1.33-5.47-5.9 0-1.3.47-2.37 1.24-3.2-.12-.3-.54-1.52.12-3.16 0 0 1.01-.32 3.3 1.22a11.45 11.45 0 0 1 6.01 0c2.29-1.54 3.3-1.22 3.3-1.22.66 1.64.24 2.86.12 3.16.77.83 1.24 1.9 1.24 3.2 0 4.58-2.81 5.6-5.49 5.89.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5"/></svg>
+    </a>
+    <a href="https://www.linkedin.com/" aria-label="LinkedIn">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.85-2.05 3.8-2.05 4.06 0 4.8 2.67 4.8 6.14V21h-4v-5.4c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.07 1.4-2.07 2.85V21H9z"/></svg>
+    </a>
+    <a href="https://scholar.google.com/" aria-label="Google Scholar">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3 2 12l3 0 0 9 6 0 0-6 2 0 0 6 6 0 0-9 3 0z"/></svg>
+    </a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
