@@ -1,2 +1,2 @@
 # .github.io
-Dillon Mehta's Blog and Portfolio
+Dillon Mehta's Personal and Professional Portfolio
