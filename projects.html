@@ -1,0 +1,131 @@
+<!-- projects.html -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Work — Dillon Mehta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html">DM</a>
+  <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"></button>
+  <nav class="nav">
+    <a class="active" href="projects.html">Work</a>
+    <a href="publications.html">Publications</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a class="btn btn-small" href="assets/Dillon_Mehta_Resume.pdf">Resume</a>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero">
+    <h1>Work</h1>
+    <p>selected projects across robotics, software, and research</p>
+    <div class="filters">
+      <input id="search" type="search" placeholder="Search projects">
+      <div class="filter-chips">
+        <button data-filter="all" class="chip active">All</button>
+        <button data-filter="robotics" class="chip">Robotics</button>
+        <button data-filter="ml" class="chip">ML</button>
+        <button data-filter="research" class="chip">Research</button>
+        <button data-filter="product" class="chip">Product</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="grid cards" id="project-grid">
+      <article class="card project" data-tags="research ml" id="agentclinic">
+        <div class="card-media" style="background-image:url('assets/agentclinic.jpg')"></div>
+        <div class="card-body">
+          <h3>AgentClinic</h3>
+          <p>multi agent framework testing clinical reasoning under guided interventions</p>
+          <div class="tags"><span class="tag">python</span><span class="tag">llm</span><span class="tag">research</span></div>
+          <div class="card-actions">
+            <a class="btn btn-small" href="#" target="_blank" rel="noopener">Code</a>
+            <a class="btn btn-small btn-outline" href="publications.html#sea2025">Paper</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card project" data-tags="robotics controls" id="vex">
+        <div class="card-media" style="background-image:url('assets/robot.jpg')"></div>
+        <div class="card-body">
+          <h3>VEX 19697Z</h3>
+          <p>competitive robot with motion profiling, telemetry, and closed loop control</p>
+          <div class="tags"><span class="tag">c++</span><span class="tag">controls</span><span class="tag">cad</span></div>
+          <div class="card-actions">
+            <a class="btn btn-small" href="#" target="_blank" rel="noopener">Code</a>
+            <a class="btn btn-small btn-outline" href="#" target="_blank" rel="noopener">Video</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card project" data-tags="ml product" id="etn">
+        <div class="card-media" style="background-image:url('assets/etn.jpg')"></div>
+        <div class="card-body">
+          <h3>Investor Matching</h3>
+          <p>startup investor pairing with feature weights tuned to real funding outcomes</p>
+          <div class="tags"><span class="tag">python</span><span class="tag">xgboost</span><span class="tag">streamlit</span></div>
+          <div class="card-actions">
+            <a class="btn btn-small" href="#" target="_blank" rel="noopener">Demo</a>
+            <a class="btn btn-small btn-outline" href="#" target="_blank" rel="noopener">Report</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card project" data-tags="product ml" id="aiceberg">
+        <div class="card-media" style="background-image:url('assets/aiceberg.jpg')"></div>
+        <div class="card-body">
+          <h3>Explainable Tuning</h3>
+          <p>ui that lets non technical users adjust ml behavior with clear feedback</p>
+          <div class="tags"><span class="tag">typescript</span><span class="tag">ux</span><span class="tag">ml</span></div>
+          <div class="card-actions">
+            <a class="btn btn-small" href="#" target="_blank" rel="noopener">Case Study</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card project" data-tags="robotics" id="wind">
+        <div class="card-media" style="background-image:url('assets/wind.jpg')"></div>
+        <div class="card-body">
+          <h3>Wind Sensor Kit</h3>
+          <p>low cost turbine sensors with calibration and data logging</p>
+          <div class="tags"><span class="tag">arduino</span><span class="tag">sensors</span></div>
+          <div class="card-actions">
+            <a class="btn btn-small" href="#" target="_blank" rel="noopener">Build Guide</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="talks">
+    <div class="section-head">
+      <h2>Talks</h2>
+    </div>
+    <ul class="timeline">
+      <li>
+        <span class="t-time">Dec 2025</span>
+        <span class="t-text">SEA Workshop presentation on intervention tests in clinical reasoning</span>
+      </li>
+      <li>
+        <span class="t-time">Mar 2025</span>
+        <span class="t-text">IEDMC invited talk on explainable tuning for end users</span>
+      </li>
+    </ul>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> Dillon Mehta</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
